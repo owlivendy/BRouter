@@ -1,0 +1,16 @@
+PODS:
+  - BRouter (0.1.0)
+
+DEPENDENCIES:
+  - BRouter (from `../`)
+
+EXTERNAL SOURCES:
+  BRouter:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BRouter: 785bf40323c3a5ce625088fb8f2eac77ddfcec75
+
+PODFILE CHECKSUM: 98701154f25d58baca4d0a5a8b6c825db501b6e1
+
+COCOAPODS: 1.7.1

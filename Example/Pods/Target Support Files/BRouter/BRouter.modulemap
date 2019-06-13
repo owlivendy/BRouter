@@ -1,0 +1,6 @@
+framework module BRouter {
+  umbrella header "BRouter-umbrella.h"
+
+  export *
+  module * { export * }
+}
