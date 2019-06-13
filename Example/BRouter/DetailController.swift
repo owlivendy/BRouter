@@ -19,13 +19,13 @@ class DetailController: UIViewController, PageRouterable {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
         
-        nameLabel.text = "欢迎~\(name ?? "guest")"
-        nameLabel.translatesAutoresizingMaskIntoConstraints = false
+        nameLabel.text = "欢迎~\(name ?? "guest")" 
         nameLabel.textColor = UIColor.black
         
         view.addSubview(nameLabel)
-        nameLabel.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: 16).isActive = true
-        nameLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
+        nameLabel.sizeToFit()
+        nameLabel.frame = nameLabel.frame.offsetBy(dx: 10, dy: 100)
+        
     }
     
 }
