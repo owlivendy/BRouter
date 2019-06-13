@@ -18,38 +18,38 @@
 ### 自定义注册
 
 ```Swift
-	///自定义，方式注册
-    BRouter.register(url: "appscheme://user/getUserInfo") { (query, extend, callback) in
-        //打印参数
-        print(query)
-        print(extend)
-        //query, extend, callback
-        //模拟网络请求
-        DispatchQueue.global().async {
-            sleep(2)
-            DispatchQueue.main.async {
-                callback?(["result":"success"])
-            }
+///自定义，方式注册
+BRouter.register(url: "appscheme://user/getUserInfo") { (query, extend, callback) in
+    //打印参数
+    print(query)
+    print(extend)
+    //query, extend, callback
+    //模拟网络请求
+    DispatchQueue.global().async {
+        sleep(2)
+        DispatchQueue.main.async {
+            callback?(["result":"success"])
         }
     }
+}
 
-	///处理 url
-	BRouter.handle(url: "appscheme://user/getUserInfo?userId=121", extened: ["Image":1]) { (paramters) in
-        ///回调结果参数
-        print("请求结果 \(paramters)")
-    }
+///处理 url
+BRouter.handle(url: "appscheme://user/getUserInfo?userId=121", extened: ["Image":1]) { (paramters) in
+    ///回调结果参数
+    print("请求结果 \(paramters)")
+}
 ```
 
 
 ### 页面注册
 
 ```Swift
-	///注册页面跳转，跳转的页面YourViewController 需要实现PageRouterable 用来接收参数
-	BRouter.map(url: "appscheme://item/detail", page: YourViewController.self)
+///注册页面跳转，跳转的页面YourViewController 需要实现PageRouterable 用来接收参数
+BRouter.map(url: "appscheme://item/detail", page: YourViewController.self)
 
-	///拿到配置的url， 跳转到匹配的页面
-	let url = "appscheme://item/detail?id=1&name=小飞"
-	BRouter.open(url: url, from: self.navigationController)
+///拿到配置的url， 跳转到匹配的页面
+let url = "appscheme://item/detail?id=1&name=小飞"
+BRouter.open(url: url, from: self.navigationController)
 ```
 
 ## Requirements
