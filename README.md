@@ -58,9 +58,7 @@ BRouter.open(url: url, from: self.navigationController)
 - Swift 5.0+ (for latest release)
 
 ## Installation
-
-支持Cocopod ,但是暂未发布到Cocoapods, 可采用私有库的方式集成
-
+ 
 BRouter is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
