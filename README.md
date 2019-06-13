@@ -1,7 +1,7 @@
 # BRouter
 
-<!--[![CI Status](https://img.shields.io/travis/owliVendy/BRouter.svg?style=flat)](https://travis-ci.org/owliVendy/BRouter)
-[![Version](https://img.shields.io/cocoapods/v/BRouter.svg?style=flat)](https://cocoapods.org/pods/BRouter)-->
+<!--[![CI Status](https://img.shields.io/travis/owliVendy/BRouter.svg?style=flat)](https://travis-ci.org/owliVendy/BRouter) -->
+[![Version](https://img.shields.io/cocoapods/v/BRouter.svg?style=flat)](https://cocoapods.org/pods/BRouter)
 [![License](https://img.shields.io/cocoapods/l/BRouter.svg?style=flat)](https://cocoapods.org/pods/BRouter) 
 [![Platform](https://img.shields.io/cocoapods/p/BRouter.svg?style=flat)](https://cocoapods.org/pods/BRouter)
 
